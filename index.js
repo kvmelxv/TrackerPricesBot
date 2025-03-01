@@ -15,7 +15,7 @@ import { sendAlert } from "./notifier.js";
     const lastPrice = getLastPrice();
     
     if (!lastPrice || price < lastPrice) {
-        console.log("⬇️ Prix en baisse, envoi d'une alerte !");
+        console.log("Prix en baisse, envoi d'une alerte !");
         sendAlert(price);
     } else {
         console.log("Pas de baisse de prix.");

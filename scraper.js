@@ -17,7 +17,7 @@ export async function getPrice() {
             return null;
         }
 
-        // Sélecteur du prix (ajusté pour Best Buy)
+        // Sélecteur du prix
         const priceElement = await page.$("#product-price-318961");
 
         if (!priceElement) {
